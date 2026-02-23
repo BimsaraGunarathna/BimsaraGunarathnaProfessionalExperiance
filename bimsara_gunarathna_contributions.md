@@ -11,7 +11,7 @@ Bimsara Gunarathna has been a Software Engineer and Platform Software Engineer a
 | Metric | Count |
 |--------|-------|
 | Jira Issues Assigned | ~96 |
-| Jira Issues Reported | ~116 |
+| Jira Issues Reported | ~118 |
 | Jira Issues Status-Transitioned (QA testing, not assignee/reporter) | 50+ |
 | Jira Issues Commented On (others' tickets) | 19 |
 | Jira Issues Watched (others' tickets) | 46 |
@@ -217,12 +217,14 @@ Bimsara Gunarathna has been a Software Engineer and Platform Software Engineer a
 | DO-2204 | Jenkins Release Build Script updates for 2.7, 2.7.1331 and trunk | Closed | P1 | DO | 2024-08-22 |
 | SC-1636 | Create ENACTOR_FILE_REPO and GENERAL_FILE_REPO users | Awaiting Branch Approval | P2 | SC | 2024-08-26 |
 | INS-529 | Vulnerability Upgrade Apache Tomcat 9.0.109 | Ready For Test | P3 | INS | 2025-11-17 |
+| INS-455 | POS MSI does not create desktop icon or the start up reference | Closed | P3 | INS | 2024-11-08 |
 | INS-400 | Broadcast.DefaultDownloadUrl to all the clients | Ready For Test | P2 | INS | 2024-09-05 |
 | PLAT-40953 | trunk and 3.0.alpha.2 release issues | Open | P1 | PLAT | 2025-10-08 |
 | PLAT-36238 | Enactor Maven Plugin Integration for faster release | Closed | P2 | PLAT | 2024-07-11 |
 | PLAT-33790 | Identity Server does not start up on new tomcat 9.0.80 | Closed | P1 | PLAT | 2024-06-05 |
 | PROD-212 | Client Configuration Sets table's ID is set auto increment | Selected for work | P3 | PROD | 2024-11-14 |
 | SDI-549 | MariaDB image should be upgraded to patch Y2K38 issue | Open | P2 | SDI | 2024-10-31 |
+| CORP-6415 | Grant SSH access to Proxmox Cluster's management node | Done | P2 | CORP | 2025-10-09 |
 | CORP-5882 | IAM role needs s3:GetBucketLocation | Done | P3 | CORP | 2025-07-03 |
 | CORP-5473 | Test portal requires Proxmox On Premises deployment access | Open | P2 | CORP | 2025-04-22 |
 | CORP-4478 | Isis Windows VM should have a static IP in the Hertford network | Done | P1 | CORP | 2025-01-20 |
@@ -764,9 +766,9 @@ Bimsara is mentioned as a team member or contributor in 40+ pages including:
 | EDIAPT | ~40 |
 | DO | ~12 |
 | SC | ~6 |
-| CORP | ~5 |
+| CORP | ~6 |
 | SDI | ~3 |
-| INS | 2 |
+| INS | 3 |
 | PT | 1 |
 | UX | 1 |
 | DT | 1 |
@@ -779,7 +781,7 @@ Bimsara is mentioned as a team member or contributor in 40+ pages including:
 | Participation Type | Count |
 |-------------------|-------|
 | Assigned | ~96 |
-| Reported | ~116 |
+| Reported | ~118 |
 | Status-Transitioned (QA testing) | 50+ |
 | Commented (others' tickets) | 19 |
 | Watched (others' tickets) | 46 |
@@ -864,4 +866,129 @@ Actively watches 46+ tickets across teams, providing oversight on security vulne
 
 ---
 
-*Report generated on 2026-02-23. Comprehensive audit v2 including status-transitioned tickets (QA testing footprint), expanded watcher/commentary contributions, Confluence comments, Zabbix templates, corrected Gitea statistics, and pages mentioning Bimsara.*
+---
+
+## 8. Career Report Supplementary Data
+
+*The following sections are sourced from a career report compiled from Enactor Gmail inbox (JIRA notifications, Confluence mentions, meeting invites, internal communications). They provide context beyond what Jira/Confluence/Gitea metadata captures.*
+
+### 8.1 Team & Organisation
+
+#### Deployment & Scalability Team (Sri Lanka)
+1. Indika Thushara Semage — Tech Lead
+2. Bimsara Gunarathna — Software / DevOps Engineer
+3. Karikaran Vettivel — Software Engineer
+4. Nilucshan Siva — Associate Tech Lead (departing Feb 2026; Kubernetes SME)
+5. Rohan Desilva — Software Engineer
+6. Janaka Bandara — Manager / Infrastructure approvals
+7. Surath Wijesinghe — Software Engineer
+8. Chathuranga Nimantha — Software Engineer
+
+#### UK Stakeholders
+1. Ben Munro Wild — Principal Architect (Modernisation Strategy, Proxmox reviews)
+2. Lee Smith — Senior Engineer (authorisation codes for Proxmox integration)
+3. David Hall / John Wood — UK DevOps
+4. Dinesh Jayasinghe — Environment operations (AWS-to-Proxmox migration coordination)
+
+### 8.2 Customer Engagement
+
+| Customer | Region | Engagement Summary |
+|----------|--------|-------------------|
+| Harrods | UK | EDIAPT-24: 2.7.525 build deploy; EDIAPT-606: RC2.295.1569 upgrade |
+| Frasers | UK | CORP-6134: Docker version upgrade advisory |
+| The Works | UK | EDIAPT-14: High memory utilisation on live worker node |
+| Specsavers | UK/Global | EDIAPT-642: Proxmox support environment implementation |
+| Magasin du Nord | Denmark | DO-2521: Routing issue for device serial number configuration |
+| Leroy Merlin | France | DO-2507: RC delivery; K8s environment adoption work |
+| Macys | USA | Kubernetes adoption support (via Nilucshan's K8s initiative) |
+| PH Mexico | Mexico | Domain/HTTPS certificate troubleshooting (Jan-Feb 2025) |
+| CTAC | TBC | EDIAPT-714: Presales environment creation |
+
+### 8.3 Training & Development
+
+| Date | Event | Notes |
+|------|-------|-------|
+| Aug 2023 | Infrastructure Deployment Process Training | Onboarding training on EDP and Enactor deployment model |
+| May 2024 | Jenkins Optimisation Workshop | With David Hall (UK); findings documented |
+| Aug 2025 | Spec Review - RFC-3 File Repository for Settlement Files | With Indika Semage; cross-functional design input |
+| Oct 2025 | DO-2461 Implementation Review | With Karikaran Vettivel prior to Proxmox PR merge |
+| Jan 2026 | Proxmox Disk Usage Review | With Ben Munro Wild |
+| Feb 2026 | AWS Cost Optimisation Review | Suggested adding Rohan Desilva to the session |
+| Feb 2026 | Kubernetes Deployment Training - Session 1 | Organised by Nilucshan Siva; Minikube, K8s manifests, AWS EKS |
+
+### 8.4 Career Timeline
+
+| Period | Key Event |
+|--------|-----------|
+| Aug 2023 | Joined Enactor; completed infrastructure deployment process training |
+| May 2024 | Jenkins optimisation project with David Hall (UK); findings documented |
+| Dec 2024 | EDP DB/RDS stability improvements (DO-2194, related DB tickets) |
+| Jul 2025 | Power BI deployment integration; MariaDB collation fix |
+| Aug-Sep 2025 | Trivy security pipeline; identity server Ubuntu upgrade; Frasers & The Works support |
+| Oct 2025 | Proxmox SSH access & environment investigations |
+| Nov 2025 | EDP v1.0.250.243 released; Proxmox migration Phase 1 doc published |
+| Dec 2025 | Specsavers Proxmox environment deployment |
+| Jan 2026 | Proxmox disk usage review with Ben Munro Wild; Harrods upgrade |
+| Feb 2026 | Kubernetes training; AWS Cost Optimisation review; Jenkins LTS review |
+
+### 8.5 Career Assessment
+
+**Current Level:** Mid-level DevOps / Platform Engineer. Trajectory: SE II to Senior within 6-12 months based on current output.
+
+**Evidence of Senior-Track Progression:**
+1. End-to-end ownership of major platform feature (Proxmox integration)
+2. Documentation authored at architecture level (Modernisation Strategy commented on by principal architect)
+3. Peer code-review responsibilities (Karikaran requesting reviews)
+4. Proactively contributes to team process improvements and cost optimisation
+5. Participating in external security audits (FOREGENIX pentest questionnaire)
+
+**Core Strengths:**
+1. Deep EDP product ownership - both feature development and infrastructure layer
+2. Strong CI/CD expertise: Jenkins, Ansible, Docker pipeline management
+3. Dual AWS + Proxmox cloud competency
+4. Reliable delivery on tier-1 retail customer deployments (Harrods, Frasers, The Works)
+5. Technical writing and knowledge management
+
+**Growth Areas:**
+1. Kubernetes - actively training; K8s with Leroy Merlin and Macys is the natural next area
+2. GitOps tooling (Argo CD / Flux) - Ben Munro Wild's recommended Phase 2 direction
+3. Formal tech-lead responsibilities - code review and approval workflows are the next step
+
+### 8.6 Technical Environment
+
+| Category | Technologies |
+|----------|-------------|
+| CI/CD | Jenkins (Docker agents, LTS, JDK 21 review) |
+| Containers | Docker, Docker Swarm, MariaDB containers, ARM64 multi-arch builds |
+| Cloud | AWS (EC2, IAM, S3, RDS, ECR), Proxmox (on-prem virtualisation) |
+| Automation | Ansible, Enactor Deployment Portal (EDP) |
+| Monitoring & Security | Zabbix, Trivy vulnerability scanning |
+| Database | MariaDB, AWS RDS (multi-AZ, read replicas) |
+| BI | Power BI integration |
+| Version Control | Git, SVN (legacy) |
+| Tooling | Jira, Confluence, Slack (#deployment-and-scalability-team), Google Meet |
+
+---
+
+## 9. Data Quality Notes
+
+### 9.1 Ticket Migration (DO/EDAT to EDIAPT)
+Several tickets referenced in the career report under DO-xxxx keys have been migrated to the EDIAPT project:
+- DO-2451 -> EDIAPT-209
+- DO-2524 -> EDIAPT-211
+- DO-2497 -> EDIAPT-210
+- EDAT-54 -> EDIAPT-24
+- CORP-6258 -> EDIAPT-14
+
+### 9.2 Career Report vs Jira Attribution
+The career report (compiled from email notifications) attributes ~18 additional tickets to Bimsara where Jira shows him as neither assignee nor reporter. These represent tickets he contributed to (code review, investigation, advisory) but where formal Jira attribution was not updated. These tickets are NOT included in the Jira sections above to maintain data accuracy.
+
+### 9.3 EDAT Project
+The EDAT Jira project appears to have been fully migrated to EDIAPT. EDAT-60 (referenced in the career report) does not exist in current Jira. EDAT-54 resolves to EDIAPT-24.
+
+### 9.4 EDIAPT-787 Discrepancy
+The career report references EDIAPT-787 as "FOREGENIX Penetration Test Questionnaire" but Jira shows it as "ISO Related Policy and Documentation creation" (assigned to indika.semage, reported by Vihang). The FOREGENIX participation may be tracked under a different ticket or was informal.
+
+---
+
+*Report generated on 2026-02-23. Comprehensive audit v2 including status-transitioned tickets (QA testing footprint), expanded watcher/commentary contributions, Confluence comments, Zabbix templates, corrected Gitea statistics, pages mentioning Bimsara, and career report supplementary data.*
