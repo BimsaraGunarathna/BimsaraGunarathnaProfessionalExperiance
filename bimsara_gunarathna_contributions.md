@@ -1,6 +1,6 @@
 # Bimsara Gunarathna - Enactor Contributions Report
 
-**Report Date:** 2026-02-23 (Revised - Comprehensive Audit v2)
+**Report Date:** 2026-02-24 (Revised - Comprehensive Audit v3 — Developer & Code Reviewer roles added)
 
 ---
 
@@ -12,6 +12,8 @@ Bimsara Gunarathna has been a Software Engineer and Platform Software Engineer a
 |--------|-------|
 | Jira Issues Assigned | ~96 |
 | Jira Issues Reported | ~118 |
+| Jira Issues as Developer (custom field) | 150 |
+| Jira Issues as Code Reviewer (custom field) | 112 |
 | Jira Issues Status-Transitioned (QA testing, not assignee/reporter) | 50+ |
 | Jira Issues Commented On (others' tickets) | 19 |
 | Jira Issues Watched (others' tickets) | 46 |
@@ -476,6 +478,252 @@ Bimsara actively watches these 46 tickets, demonstrating cross-team oversight an
 | SC-1127 | Gift Card Top Up - Min/max threshold values | Ready For Test | P3 | SC | 2023-02-03 |
 | CORP-1448 | Ubuntu 22 AMI - Root/data volume separation not working | Done | P1 | CORP | 2023-04-10 |
 
+### 3.7 Developer & Code Reviewer Role Contributions (Custom Fields)
+
+Jira custom fields `Developer` (customfield_12303) and `Code Reviewer` (customfield_12451) track the actual developer and code reviewer for each ticket, independent of the Assignee field. These represent the engineering contribution footprint beyond ticket assignment.
+
+| Role | Total Tickets | Across Projects |
+|------|--------------|-----------------|
+| Developer | 150 | DO (62), PLAT (48), SDI (21), SC (7), EDIAPT (4), RFC (4), INS (3), PAY (1) |
+| Code Reviewer | 112 | DO (77), SDI (21), PLAT (8), SC (3), INS (3) |
+| Both roles on same ticket | 10 | DO-2429, DO-2446, PLAT-27042, PLAT-27404, PLAT-32148, PLAT-37206, SC-978, SC-1636, SDI-444, SDI-567 |
+| **Total unique tickets** | **252** | **8 projects** |
+
+*Tickets already listed elsewhere in this report (Assigned, Reported, Watched, etc.) are omitted below. Only newly identified tickets are listed.*
+
+#### 3.7.1 Developer Role — New Tickets Not Listed Elsewhere
+
+**DO (Dev Ops) — 57 tickets**
+
+| Key | Summary |
+|-----|---------|
+| DO-2501 | New Power BI Deployment - Power BI Models missing from Deployment Dashboard |
+| DO-2484 | Deployment Portal - Add character length validation to Environment Identifier for BI Deployments |
+| DO-2474 | SQL error - Illegal mix of collations in MariaDB Docker Image |
+| DO-2470 | Introduce the new revamped topology Tiny 4.0 Production |
+| DO-2463 | Vulnerability Upgrade - Jenkins version upgrade to 2.504 |
+| DO-2446 | Fix version is not getting populated for RT project |
+| DO-2429 | Create Platform Branch off job not working as expected |
+| DO-2422 | Only list deployment config 4 for BI Deployments |
+| DO-2417 | On-Prem Deployments Stuck at Restart Services Stage During Redeployment |
+| DO-2370 | Monitoring agent is not sending access and refresh token properly |
+| DO-2365 | Trigger the Automation Orchestrator from Nightly release build |
+| DO-2316 | Database Deployment Fails on First Attempt When Enabling Read Replica |
+| DO-2285 | Windows deployment's EM_REGISTRATION_BASE_URL parameter is empty |
+| DO-2279 | Application Process Logs table is getting too large |
+| DO-2276 | Deployment portal and Tool needs to be compatible with OCI images |
+| DO-2259 | Environment Type should be reflected on the environment's browser tab favicon |
+| DO-2250 | Deployment Tool, Topology release should only be taken if there are changes |
+| DO-2245 | Improvements needed for deployment portal back-end/front-end and UI changes in on_prem deployment |
+| DO-2244 | Platform release tags should have the release versions set and validated |
+| DO-2242 | Update NGINX reverse proxy version on all standard topologies for vulnerability fixes |
+| DO-2077 | Add health check http endpoint to the PDP and the PDC |
+| DO-2074 | [Documentation] EM Application log maintenance: Log Context Name dropdown issues |
+| DO-2062 | Backup and rollback when doing a redeployment |
+| DO-2050 | Open source list updated - keeping as per the current format |
+| DO-2047 | Uploading config fails when trying to import multiple configs |
+| DO-2035 | EDT: Pipeline initializer job must be able to handle custom topologies |
+| DO-2021 | Investigate and update the AWS disk type for all the topologies |
+| DO-2011 | Zabbix proxy can't connect to zabbix server |
+| DO-2004 | Pipeline initializer try to invoke DSL scripts even if unavailable at the SVN location |
+| DO-2000 | Scheduled jobs to update deployment request status logs an NPE |
+| DO-1965 | EDP: The drop data option should not be visible for production deployments |
+| DO-1945 | Add needed environment variables to Identity Server |
+| DO-1908 | EDP: Deployments should use private/public Zabbix endpoints based on deployment type |
+| DO-1906 | EDP: Cloud accounts progress endpoint is returning 404 |
+| DO-1809 | EDP: Redeployments not working in the pre-production portal |
+| DO-1806 | EDP: "Created By" filter not displaying Tenant-specific user list |
+| DO-1801 | Update Document - Portal Roles and Privilege Assignment |
+| DO-1800 | ER Diagram for Deployment Portal |
+| DO-1771 | EDP: When redeploying in dry run mode, confirmation message should mention "dry run" |
+| DO-1762 | Create dedicated ProductDocker and ProductInstaller branches for RC1 and RC2 |
+| DO-1747 | Zabbix DB user is missing few privileges |
+| DO-1732 | EDP: Incorrect VM Count when adding Installer VMs after rollback |
+| DO-1730 | EDP: Resource lock error message should include name of the user who has the lock |
+| DO-1690 | EDP: Docker swarm service status did not update when a Worker Node is Down |
+| DO-1680 | RDS Max connections needs increasing for any new customer |
+| DO-1674 | EDP: A way to redeploy with "reinitialize swarm" |
+| DO-1670 | EDP - AZURE option not Selectable in Cloud Provider Drop down Menu |
+| DO-1650 | EDP: Use Terraform and Ansible without storing AWS credentials |
+| DO-1635 | Toggle test environments into "maintenance mode" in zabbix |
+| DO-1628 | EDP: Automated zabbix deployment need to support multi service deployments |
+| DO-1608 | EDP - Deployment VPCs - VPC Status field accessible under certain conditions |
+| DO-1595 | Virus scanning methods of enactor docker images, test run with Cost Analysis |
+| DO-1586 | Include the Deployment Request ID as a tag for AWS environments |
+| DO-1572 | DB schema name prefix could be configurable in topologies |
+| DO-1562 | SFTP account shouldn't use the default Admin password |
+| DO-1548 | EDP: Show the client/env name in the redeployment confirmation dialog |
+| DO-1434 | EDP - Tenants save button should work with a single click |
+
+**PLAT (Platform) — 13 tickets**
+
+| Key | Summary |
+|-----|---------|
+| PLAT-40440 | RC2 Branch Build pipeline improvements merge from Q3 |
+| PLAT-38844 | core-automation.jar needs to be added to POS Optional modules to ship with MSI |
+| PLAT-37101 | PDC MSI Installation Failure in 2.7.1331 after Java 17 upgrade |
+| PLAT-34278 | Identity Server: Can't continue without a valid file license |
+| PLAT-29701 | We should not have to explicitly feed the (public) URL of EMR to the EMA/SS |
+| PLAT-28967 | Gift Card Minimum top up not being enforced v3 |
+| PLAT-28651 | Gift Card Minimum top up not being enforced v2 |
+| PLAT-26445 | POS Automation - Fix script issues in Terminal Discrepancies report |
+| PLAT-26411 | POS Automation - Fix Transfer In Expected Automation test failures |
+| PLAT-26409 | POS Automation - Fix Transfer In Automation test failures |
+| PLAT-26358 | React POS - Up button in Item void page is not working |
+| PLAT-26331 | React UI Web POS and Thick POS - Tender Amount shows inappropriate characters |
+| PLAT-26216 | Add Season ID to columns in product table |
+
+**SDI (Standard Docker Images) — 3 tickets**
+
+| Key | Summary |
+|-----|---------|
+| SDI-565 | Vulnerability Upgrade to OpenJDK 11.0.27 |
+| SDI-564 | Vulnerability Upgrade - Tomcat 9.0.105 |
+| SDI-563 | Vulnerability Upgrade to MariaDB 10.11.11 |
+
+**RFC (Small Project Customers) — 3 tickets**
+
+| Key | Summary |
+|-----|---------|
+| RFC-318 | Using AWS IAM authentication to connect to an RDS to avoid visible DB passwords (Spec) |
+| RFC-309 | Introduce Proxmox cloud provider support to the deployment portal |
+| RFC-233 | Specification for running automations with nightly build |
+
+**INS (Installers) — 3 tickets**
+
+| Key | Summary |
+|-----|---------|
+| INS-447 | Installers should use mariadb 11.4.3 when DATABASE_DOWNLOAD_URL is not specified |
+| INS-442 | Migration to Store Server Tomcat 9.0.90 |
+| INS-427 | Q3 Store Server Installer - Service fails to start due to unsupported parameter in Tomcat Java Options |
+
+**EDIAPT (EoD, DevOps & Infrastructure) — 2 tickets**
+
+| Key | Summary |
+|-----|---------|
+| EDIAPT-211 | Ansible linux-deploy-suite fails during validate-docker-images.yaml due to skopeo installation error |
+| EDIAPT-209 | transaction_isolation should be set to READ-COMMITTED for any new database deployment |
+
+**PAY (Payment Services) — 1 ticket**
+
+| Key | Summary |
+|-----|---------|
+| PAY-4340 | Vulnerability Upgrade Apache Tomcat 9.0.109 - Testing |
+
+**SC (Standard Config) — 1 ticket**
+
+| Key | Summary |
+|-----|---------|
+| SC-1451 | Add File Repository locations to purgeable directories |
+
+#### 3.7.2 Code Reviewer Role — New Tickets Not Listed Elsewhere
+
+**DO (Dev Ops) — 71 tickets**
+
+| Key | Summary |
+|-----|---------|
+| DO-2492 | EDP - Adding database URLs in WebPOS stack files |
+| DO-2472 | Deployment Portal "Collect Logs" Action Fails to Send Jenkins-Fetched Logs |
+| DO-2424 | Improving the robustness of Jenkins builds on networking |
+| DO-2418 | RMS - Introducing a script at the end of each pipeline to delete artifacts of failed builds |
+| DO-2382 | Include PPM Container in Development Environment Topologies |
+| DO-2374 | Update NGINX Version to 2.6.9 Across All Topologies |
+| DO-2344 | EDP Fails to Deploy EM on Non-CIS Hardened Ubuntu Images |
+| DO-2312 | Can't enable Zabbix in Enactor deployments |
+| DO-2308 | Introduce Customer Loyalty Signup to topologies |
+| DO-2287 | Can't redeploy a Production Deployment in the Pre-Production Portal |
+| DO-2281 | Change Web POS health check end point |
+| DO-2277 | Topologies should support Thick WebPOS |
+| DO-2270 | The NPM token needs to be updated monthly |
+| DO-2258 | A white screen of death appears when a user does not have privileges |
+| DO-2257 | Jenkins version need to update to Jenkins 2.471 Payment portal |
+| DO-2251 | Commit Chromium Embedded Framework Build Jenkins Script |
+| DO-2225 | BO Application update failed in Magazin validation with Entity too large error |
+| DO-2208 | Include the Q3 branch in the Check Docker Vulnerabilities V2 job |
+| DO-2193 | EDP: RDS Name Validation |
+| DO-2182 | 2.7 branch - Java 17 upgrade |
+| DO-2172 | EDP: Compatible Platform Version should be validated when creating a topology |
+| DO-2169 | EDP: Sensitive information of credentials are visible in the database |
+| DO-2168 | EDP: Improvements to database deployments - Not stopping RDS instance if a read replica is associated |
+| DO-2149 | Pre-Prod Deployment Portal - Unable to access Deployment Activity Logs |
+| DO-2085 | Start Action Button Not Visible for On-Demand Schedule |
+| DO-2083 | EDT: Change deployment tool groovy scripts to read enactor-suite-params |
+| DO-2081 | EDP can't create Maintenance windows in Zabbix Server in the production deployment portal |
+| DO-2076 | Update T513_EM topology |
+| DO-2073 | Deployment Schedule expiration should be warned more prominently |
+| DO-2070 | EDT: Jenkins agent version is not getting passed from enactor-demo-deployment to sub jobs |
+| DO-2063 | Jenkins RC2 builds need to populate the CUS Jira Project with Affects Versions - Implementation |
+| DO-2055 | Update Jira Comment generated by pre-compile jenkins job |
+| DO-2054 | EDT: Enactor Product Deployment job fails because of a missing stack file |
+| DO-2045 | EDP: Users should not be able to copy and paste env name when destroying production environments |
+| DO-2043 | Create a new EOD T513 EM only topology |
+| DO-2037 | Read-replica details not populated in the emr.env file |
+| DO-2024 | Disable Auto minor version upgrade in RDS created by the Deployment Portal |
+| DO-2012 | EDP: python3.7 is no longer supported for creating or updating AWS Lambda functions |
+| DO-2010 | EDT: Deployment failed during the configure nodes stage due to Zabbix configurations |
+| DO-2006 | Fixed issues in SMS topology |
+| DO-2003 | Deployment portal images should be scanned for vulnerability regularly |
+| DO-2002 | Status is not displayed on the deployment request list page |
+| DO-1998 | New T513-R topology to be created for retail central deployment only |
+| DO-1992 | Shift deployment portal internal traffic from http to https |
+| DO-1991 | EDP: Failing to send emails should not return 500 response on /callback endpoint |
+| DO-1987 | Platform Version DB Server listAllWithDeploymentID Method Failure |
+| DO-1978 | Health checks are failing in 4 payment services due to wrong health check url |
+| DO-1973 | EDP: A copy button for topologies |
+| DO-1971 | EDP: Deployment Failure in Enactor-Demo-Deployment Jenkins Job After Uploading Topology Zip |
+| DO-1969 | PDP Manifest.xml in the Docker containers should be updated with the release version |
+| DO-1968 | EDP: Improvements to the configuration import process |
+| DO-1960 | EDP: Enable Zabbix maintenance mode when redeploying an environment |
+| DO-1958 | Add DP topology to enable deploying a Fiscal Module |
+| DO-1953 | EDP: Viewing activity logs of database deployment throws an error |
+| DO-1936 | Jenkins RC2 builds need to populate CUS Jira Project with Affects Versions - Investigation |
+| DO-1909 | EDP: Minor changes to cloud accounts, deployment request and topologies UIs |
+| DO-1904 | EDP: Can't enable read replica for an existing database deployment |
+| DO-1901 | EDP: Topologies can't be deleted once created |
+| DO-1898 | EDP: DM Role - Restrict properties editable by DMs |
+| DO-1884 | EDP: configure-nodes stage takes a long time to finish when redeploying |
+| DO-1877 | EDP: Standard topologies can be edited by opening them using the URL |
+| DO-1876 | EDP: Redeployment confirmation box has a "redeployment method" for windows deployments |
+| DO-1873 | EDP: Docker secret files are created for services even when they are not deployed |
+| DO-1858 | Fix the reporting job to send reports to the relevant personnel |
+| DO-1857 | Parent Jenkins job to execute vulnerability scanning job for releases |
+| DO-1856 | Changes to the vulnerability scanning Jenkins job |
+| DO-1853 | EDP: Platform versions used in redeployment pending deployments can be deleted |
+| DO-1817 | EDP: Users should properly handle Topology, Department, and Sub-Department fields |
+| DO-1677 | POC: Backup and rollback when doing a redeployment |
+| DO-1604 | Document how to deploy the monitoring agent in old deployments |
+| DO-1565 | Support zabbix automated deployment for store microservice deployments |
+| DO-1290 | Nginx: issues with end-to-end encryption |
+
+**SDI (Standard Docker Images) — 10 tickets**
+
+| Key | Summary |
+|-----|---------|
+| SDI-530 | Update NGINX version to nginx:stable-alpine3.20-perl |
+| SDI-525 | 2.7 branch - Java 17 upgrade - PDP server |
+| SDI-520 | Merge SDI-515 changes to RC1 branch |
+| SDI-519 | SDI-421 MariaDB native connector change merge to standard product |
+| SDI-518 | Update Docker PDP/PDC Base version to latest ubuntu version |
+| SDI-515 | SDI-421 MySQL connector upgrade merge to standard product |
+| SDI-512 | Could not resolve placeholder ENACTOR_MODULES_CUSTOMERCOLLECTIONSMODULE |
+| SDI-500 | EDT Jenkins: Some credentials can't be configured via environment variables |
+| SDI-491 | CIS Harden MariaDB Docker image |
+| SDI-490 | CIS Harden Tomcat 9 Docker image |
+
+**INS (Installers) — 3 tickets**
+
+| Key | Summary |
+|-----|---------|
+| INS-404 | Merge INS-403 changes to RC1 branch |
+| INS-403 | SDI-421 MySQL connector change merge to installers |
+| INS-398 | SDI-421 MariaDB connector support for standard product |
+
+**PLAT (Platform) — 1 ticket**
+
+| Key | Summary |
+|-----|---------|
+| PLAT-27696 | Integrate Enactor schema manager to IS |
+
 ---
 
 ## 4. Gitea Source Control Contributions
@@ -776,31 +1024,48 @@ Bimsara is mentioned as a team member or contributor in 40+ pages including:
 | RFC | 1 |
 | **Total** | **~116** |
 
-### 6.3 All Jira Participation Summary
+### 6.3 Developer & Code Reviewer Role by Project
+
+| Project | As Developer | As Code Reviewer | Unique Total |
+|---------|-------------|-----------------|-------------|
+| DO (Dev Ops) | 62 | 77 | 137 |
+| PLAT (Platform) | 48 | 8 | 52 |
+| SDI (Standard Docker Images) | 21 | 21 | 40 |
+| SC (Standard Config) | 7 | 3 | 8 |
+| INS (Installers) | 3 | 3 | 6 |
+| EDIAPT (EoD, DevOps & Infra) | 4 | 0 | 4 |
+| RFC (Small Project Customers) | 4 | 0 | 4 |
+| PAY (Payment Services) | 1 | 0 | 1 |
+| **Total** | **150** | **112** | **252** |
+
+### 6.4 All Jira Participation Summary
 
 | Participation Type | Count |
 |-------------------|-------|
 | Assigned | ~96 |
 | Reported | ~118 |
+| Developer (custom field) | 150 |
+| Code Reviewer (custom field) | 112 |
 | Status-Transitioned (QA testing) | 50+ |
 | Commented (others' tickets) | 19 |
 | Watched (others' tickets) | 46 |
 | Text-Mentioned | 9 |
-| **Total unique Jira footprint** | **~300+** |
+| **Total unique Jira footprint** | **~500+** |
 
-### 6.4 Projects Contributed To
+### 6.5 Projects Contributed To
 
 | Project | Key | Participation Types |
 |---------|-----|-------------------|
-| Platform | PLAT | Assigned, Reported, Transitioned, Commented, Watched |
-| EoD, DevOps & Infrastructure | EDIAPT | Assigned, Reported, Commented, Watched, Mentioned |
+| Platform | PLAT | Assigned, Reported, Developer (48), Reviewer (8), Transitioned, Commented, Watched |
+| EoD, DevOps & Infrastructure | EDIAPT | Assigned, Reported, Developer (4), Commented, Watched, Mentioned |
 | Corporate Infrastructure | CORP | Assigned, Reported, Commented, Watched, Mentioned |
-| Deployment Operations | DO | Assigned, Reported, Transitioned, Commented |
-| Standard Docker Images | SDI | Assigned, Reported, Watched (17 vulnerability tickets) |
+| Dev Ops | DO | Assigned, Reported, Developer (62), Reviewer (77), Transitioned, Commented |
+| Standard Docker Images | SDI | Assigned, Reported, Developer (21), Reviewer (21), Watched |
 | Training & Configuration | TRN | Assigned, Transitioned, Mentioned |
-| RFC Proposals | RFC | Assigned, Watched (7 proposals) |
-| Installers | INS | Assigned, Reported |
-| Standard Configuration | SC | Reported, Transitioned, Watched |
+| RFC Proposals | RFC | Assigned, Developer (4), Watched |
+| Installers | INS | Assigned, Reported, Developer (3), Reviewer (3) |
+| Standard Configuration | SC | Reported, Developer (7), Reviewer (3), Transitioned, Watched |
+| Payment Services | PAY | Developer (1) |
 | POS | POS | Watched |
 | Release Testing | RT | Watched |
 | Thin Client Android | TCA | Transitioned |
@@ -991,4 +1256,4 @@ The career report references EDIAPT-787 as "FOREGENIX Penetration Test Questionn
 
 ---
 
-*Report generated on 2026-02-23. Comprehensive audit v2 including status-transitioned tickets (QA testing footprint), expanded watcher/commentary contributions, Confluence comments, Zabbix templates, corrected Gitea statistics, pages mentioning Bimsara, and career report supplementary data.*
+*Report generated on 2026-02-24. Comprehensive audit v3 including Developer role (150 tickets) and Code Reviewer role (112 tickets) custom field data from Jira, status-transitioned tickets (QA testing footprint), expanded watcher/commentary contributions, Confluence comments, Zabbix templates, corrected Gitea statistics, pages mentioning Bimsara, and career report supplementary data.*
