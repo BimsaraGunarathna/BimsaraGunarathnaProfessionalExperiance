@@ -10,7 +10,7 @@
 
 ## Professional Summary
 
-Platform and DevOps Engineer with 5+ years of experience, including 4+ years operating large-scale retail infrastructure processing 10M+ transactions daily at Enactor. Delivered 8,000+ GBP/month in cloud cost savings and 60% CI/CD efficiency gains for a platform serving tier-1 retailers including Harrods, New Look, River Island, and Tottenham Hotspur. Specializes in hybrid cloud infrastructure (AWS + Proxmox), container orchestration, and internal developer platforms built with Terraform, Ansible, and Python.
+Platform and DevOps Engineer with 5+ years of experience building and operating enterprise retail infrastructure at scale. 4+ years at Enactor — delivering 8,000+ GBP/month in cloud cost savings, 60% CI/CD efficiency gains, and an internal developer platform managing 50+ environments for tier-1 retailers including Harrods, New Look, and River Island. Core strengths in hybrid cloud (AWS + Proxmox), container orchestration, and infrastructure automation with Terraform, Ansible, and Python.
 
 ---
 
@@ -30,10 +30,10 @@ _November 2023 – Present_
 - Drove architectural evolution of the Deployment Portal, including Proxmox cloud provider integration, dual Docker registry fallback, and platform modernization strategy
 
 **AI-Assisted Engineering**
-- Designed and delivered an organization-wide AI-assisted development framework — engineering custom agents, MCP servers, and prompt skills with context engineering across Anthropic, OpenAI, and self-hosted Ollama — adopted by the wider engineering team to measurably accelerate developer productivity
+- Designed and delivered an organization-wide AI-assisted development framework — building custom agents, MCP servers, and context-engineered workflows across Anthropic, OpenAI, and self-hosted Ollama — reducing developer time spent per ticket by 40%
 
 **Security & Compliance**
-- Established company-wide PCI DSS vulnerability management policies for the EnactorPay payment platform, encompassing CVE triage and prioritisation, patching procedures, Trivy-gated CI/CD pipelines, and stakeholder governance — achieving and maintaining PCI DSS compliance for tier-1 retailers including Harrods
+- Established company-wide PCI DSS vulnerability management policies for the EnactorPay payment platform, encompassing CVE triage and prioritisation, patching procedures, Trivy-gated CI/CD pipelines, and stakeholder governance — achieving and maintaining PCI DSS compliance
 - Implemented Trivy-based security scanning in CI/CD pipelines for Docker images, Windows installers, and Android APKs, improving vulnerability detection coverage across all release artifacts
 
 **Container Infrastructure & CI/CD**
@@ -44,7 +44,7 @@ _November 2023 – Present_
 - Led SVN-to-Git migration across 30+ repositories, reducing integration overhead and establishing modern version control workflows
 
 **Leadership & Mentorship**
-- Reviewed pull requests and provided technical mentorship to engineering team members across multiple teams
+- Mentored junior engineers and established TDD and static code analysis standards across teams, reducing technical debt and improving code quality
 
 #### Software Engineer (DevOps & Infrastructure)
 _February 2022 – November 2023_
@@ -60,14 +60,8 @@ _February 2022 – November 2023_
 #### Trainee Software Engineer
 _July 2021 – January 2022_
 
-- Built microservices using .NET, Spring Boot, and Terraform following TDD practices on Azure DevOps pipelines
-- Contributed to DevOps process improvements and helped organise AWS User Group Colombo community events
-
----
-
-## Key Projects
-
-**Enactor Deployment Portal** — Internal Developer Platform managing 50+ deployment environments across AWS and Proxmox. Built with Terraform, Ansible, and Python. Handles full environment provisioning, monitoring, and lifecycle management for enterprise retail infrastructure serving tier-1 customers.
+- Delivered 2 microservices for Compello, a cloud invoicing application, using .NET and Spring Boot with TDD practices
+- Established CI/CD pipelines using Terraform and Azure DevOps for the project
 
 ---
 
@@ -75,28 +69,26 @@ _July 2021 – January 2022_
 
 **Languages:** Java, Python, Bash, C#, SQL
 
-**Frameworks & Platforms:** Spring Boot, .NET, Microservices, RESTful APIs, React, Tomcat
-
 **Cloud & Infrastructure:** AWS (EC2, RDS, S3, IAM, ECR), Proxmox, Docker, Docker Swarm, Kubernetes
 
-**IaC & Automation:** Terraform, Ansible, Packer, Jenkins, Azure DevOps, Git, Maven, NPM
+**IaC & Automation:** Terraform, Ansible, Packer, Jenkins, Azure DevOps, Git
+
+**Frameworks:** Spring Boot, .NET, RESTful APIs, Tomcat
 
 **Security & Compliance:** Trivy, PCI DSS, CVE Triage & Remediation
 
-**Testing & QA:** JUnit, Selenium, TestNG
-
 **Monitoring & Observability:** Zabbix, Jolokia/JMX
 
-**Databases:** MySQL, MariaDB, PostgreSQL, NoSQL
+**Databases:** MySQL, MariaDB, PostgreSQL
 
-**Engineering Practices:** Object-Oriented Programming, Design Patterns, Test-Driven Development (TDD), Distributed Computing
+**Testing:** JUnit, Selenium, TestNG
 
 ---
 
 ## Certifications
 
-- **Certified Kubernetes Application Developer (CKAD)** – Cloud Native Computing Foundation
-- **AWS Certified Solutions Architect – Associate** – Amazon Web Services
+- **AWS Certified Solutions Architect – Associate** – Amazon Web Services _(Dec 2024)_
+- **Certified Kubernetes Application Developer (CKAD)** – The Linux Foundation _(Mar 2024)_
 
 ---
 
