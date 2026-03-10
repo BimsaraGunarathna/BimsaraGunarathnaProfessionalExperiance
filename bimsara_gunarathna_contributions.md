@@ -6,7 +6,8 @@
 
 ## 1. Executive Summary
 
-Bimsara Gunarathna has been a Software Engineer and Platform Software Engineer at Enactor, with contributions spanning POS testing and React UI development (2022-2023), Docker/container infrastructure (2023-2024), and platform engineering, cloud infrastructure, and DevOps tooling (2024-present). This report covers contributions across Jira, Confluence, and Gitea source control.
+Bimsara Gunarathna has been a Software Engineer and Platform Software Engineer at Enactor, with contributions spanning POS testing and React UI development (2022-2023), Docker/container infrastructure (2023-2024), and platfo
+rm engineering, cloud infrastructure, and DevOps tooling (2024-present). This report covers contributions across Jira, Confluence, and Gitea source control.
 
 | Metric | Count |
 |--------|-------|

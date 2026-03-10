@@ -30,14 +30,14 @@ _November 2023 – Present_
 - Drove architectural evolution of the Deployment Portal, including Proxmox cloud provider integration, dual Docker registry fallback, and platform modernization strategy
 
 **AI-Assisted Engineering**
-- Designed and delivered an organization-wide AI-assisted development framework — building custom agents, MCP servers, and context-engineered workflows across Anthropic, OpenAI, and self-hosted Ollama — reducing developer time spent per ticket by 40%
+- Designed and delivered an organization-wide AI-assisted development framework — building custom agents, MCP servers, and context-engineered workflows using commercial and open-source self-hosted LLMs — reducing developer time per ticket by 40%
 
 **Security & Compliance**
 - Established company-wide PCI DSS vulnerability management policies for the EnactorPay payment platform, encompassing CVE triage and prioritisation, patching procedures, Trivy-gated CI/CD pipelines, and stakeholder governance — achieving and maintaining PCI DSS compliance
 - Implemented Trivy-based security scanning in CI/CD pipelines for Docker images, Windows installers, and Android APKs, improving vulnerability detection coverage across all release artifacts
 
 **Container Infrastructure & CI/CD**
-- Owned and maintained Enactor's foundational Docker image layers — base OS runtimes (Ubuntu, Java, Tomcat, Node, MariaDB) — ensuring consistent, secure delivery across all product and customer teams
+- Maintained Enactor's base Docker image layers — base OS runtimes (Ubuntu, Java, Tomcat, Node, MariaDB) — ensuring consistent, secure delivery across all product and customer teams
 - Optimized Docker Swarm and Kubernetes deployments supporting production workloads of 10M+ transactions per day for tier-1 retail customers
 - Automated Enactor's nightly Selenium/TestNG UI regression suite, reclaiming 2 QA man-days per week per customer and enabling faster release cycles
 - Contributed to Jenkins infrastructure modernization including LTS upgrades to JDK 21, build optimization, and agent reliability improvements
