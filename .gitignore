@@ -1,0 +1,9 @@
+# macOS system files
+.DS_Store
+
+# Log files
+mdpdf.log
+
+# Opencode - ignore everything except commands
+.opencode/*
+!.opencode/commands/
