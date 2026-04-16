@@ -1,11 +1,10 @@
-body { font-family: Calibri, Arial, sans-serif; font-size: 10.5pt; line-height: 1.15; color: #333; margin: 0; padding: 0; }
-h1 { font-size: 18pt; margin: 0 0 1pt 0; color: #000; font-weight: bold; }
-h2 { font-size: 10.5pt; margin: 6pt 0 2pt 0; border-bottom: 1px solid #ccc; padding-bottom: 1pt; color: #000; font-weight: bold; }
-h3 { font-size: 10.5pt; margin: 4pt 0 1pt 0; color: #000; font-weight: bold; }
-h4 { font-size: 10pt; margin: 2pt 0 0pt 0; color: #333; font-weight: bold; }
-p { margin: 1pt 0; }
-ul { margin: 1pt 0; padding-left: 12pt; }
-li { margin: 0.8pt 0; }
-em { font-size: 9pt; font-style: italic; }
+body { font-family: Calibri, Arial, sans-serif; font-size: 9.5pt; line-height: 1.05; color: #333; margin: 0; padding: 0; }
+h1 { font-size: 17pt; margin: 0 0 1pt 0; color: #000; }
+h2 { font-size: 10.2pt; margin: 2pt 0 0.5pt 0; border-bottom: 1px solid #ccc; padding-bottom: 0.5pt; color: #000; }
+h3 { font-size: 10pt; margin: 1.5pt 0 0.5pt 0; color: #000; }
+h4 { font-size: 9.6pt; margin: 1pt 0 0.5pt 0; color: #000; }
+p { margin: 0.5pt 0; }
+ul { margin: 0.5pt 0; padding-left: 12pt; }
+li { margin: 0.3pt 0; }
+em { font-size: 9pt; }
 a { color: #0563C1; text-decoration: none; }
-strong { font-weight: bold; }
